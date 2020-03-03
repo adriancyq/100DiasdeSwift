@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rEZ-al-rvv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XWH-um-T0J">
+            <objects>
+                <tableViewController id="JpA-9B-ICG" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qtf-Jg-lXG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="GEh-jz-ddt" style="IBUITableViewCellStyleDefault" id="U45-S8-rvx">
+                                <rect key="frame" x="0.0" y="28" width="414" height="59.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U45-S8-rvx" id="Lom-rc-via">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GEh-jz-ddt">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JpA-9B-ICG" id="aAg-id-p8I"/>
+                            <outlet property="delegate" destination="JpA-9B-ICG" id="0hv-cd-Jid"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qQF-Lo-fo4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOM-lY-C2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.072463768116" y="84.375"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="GH2-b8-Bmv">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="oJK-KW-EOH" customClass="DetailViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bh-9d-C9b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="87y-Py-R2E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="87y-Py-R2E" firstAttribute="leading" secondItem="flX-Ud-L0Z" secondAttribute="leading" id="8JD-nY-Ube"/>
+                            <constraint firstItem="87y-Py-R2E" firstAttribute="centerX" secondItem="7bh-9d-C9b" secondAttribute="centerX" id="E40-CJ-a02"/>
+                            <constraint firstItem="87y-Py-R2E" firstAttribute="centerY" secondItem="7bh-9d-C9b" secondAttribute="centerY" id="iKi-G0-7ak"/>
+                            <constraint firstItem="87y-Py-R2E" firstAttribute="top" secondItem="7bh-9d-C9b" secondAttribute="topMargin" constant="-44" id="mrj-1T-8l1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="flX-Ud-L0Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="87y-Py-R2E" id="PE7-cS-Zbc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bx-ik-PT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DpP-7n-UYd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rEZ-al-rvv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oxo-Bc-KvV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JpA-9B-ICG" kind="relationship" relationship="rootViewController" id="xoM-UR-AlQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0n6-l2-D8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="84.375"/>
+        </scene>
+    </scenes>
+</document>
